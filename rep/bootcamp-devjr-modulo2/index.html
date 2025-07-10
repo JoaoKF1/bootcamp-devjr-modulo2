@@ -28,9 +28,7 @@
 
         .flex-container{
             display: flex;
-            background-color: #006a6a;
             justify-content: space-around;
-            padding: 20px;
         }
         .header-title{
             color: #006f6f;
@@ -43,6 +41,47 @@
             font-size: 18px;
             font-weight: 500;
             margin-bottom: 15px;
+        }
+        .flex-column1{
+            display: flex;
+        }
+        .col1{
+            background-color: #006f6f;
+            width: 50%;
+            padding: 20px;
+            color: #fff;
+        }
+        .col2{
+            background-color: #009e9e;
+            width: 50%;
+            color: #fff;
+        }
+        .subscription-title{
+            font-size: 20px;
+            text-align: center;
+        }
+        .price{
+            font-size: 26px;
+            font-weight: 700;
+        }
+        .month {
+            font-size: 15px;
+            font-style: italic;
+            margin-bottom: 15px;
+
+        }
+        .button{
+            margin-top: 15px;
+
+            width: 100%;
+            padding: 15px 32px;
+
+            color: #006a6a;
+            background-color: #cccccc;
+            font-size: 16px;
+
+            border-radius: 4px;
+            border: none;
         }
     </style>
     
@@ -61,11 +100,22 @@
                 Tenha suporte da nossa equipe e cresça mais rápido na sua carreira.
             </div>
         </div>
-        <div class="flex-container">
-            <div>
-                Coluna 1
+        <div class = "flex-container">
+            <div class="col1">
+                <div class="subscription-title">
+                    Assinatura mensal:
+                </div>
+                <div>
+                    <span class="price">R$ 99,99</span> 
+                    <span class="month">por mês</span>
+                </div>
+                <div>
+                    Cancele a qualquer momento.
+                </div>
+
+                <button class="button">Assine Agora</button>
             </div>
-             <div>
+             <div class="col2">
                 Coluna 2
             </div>
         </div>
